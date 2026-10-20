@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "example",
+      "name": "Example plugin",
+      "description": "Demo of all three plugin hooks: a strobe and a sunrise light animation, robot vacuums with their own icon and text, and a room section listing open windows.",
+      "author": "therealMRBK",
+      "version": "1.0.0",
+      "homepage": "https://github.com/therealMRBK/NextFloor/blob/main/docs/examples/nextfloor-plugin-example.js",
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor/7bd88727f6c2a71fab0ab07839579f5309457329/docs/examples/nextfloor-plugin-example.js",
+      "sha256": "bb9827130ebccbbe7b3d333ee7b84e6fd1e392d3afc4180a3673388e6c6f9852"
+    }
+  ]
+}
