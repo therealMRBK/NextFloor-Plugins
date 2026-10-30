@@ -1,10 +1,13 @@
 // NextFloor Cameras (plugin API 1): security cameras and alarm panels in the 3D plan.
 //
 // - Cameras (camera.*) get a marker and a field-of-view wedge on the floor that stops at walls. The wedge turns red while
-//   a motion, occupancy or presence sensor of the same device detects something (which detections count is a setting).
+//   a motion, occupancy or presence sensor of the same device detects something (which kinds count, its brightness and
+//   whether it is shown at all are settings).
 // - A tap on the camera or its wedge opens Home Assistant's own live player (picture-entity card in live view, so
 //   WebRTC/HLS through go2rtc where available) in a small window in the corner, or Home Assistant's camera dialog.
-// - Alarm panels (alarm_control_panel.*) get a shield marker with their state; a tap opens Home Assistant's keypad.
+// - Alarm panels (alarm_control_panel.*) get a shield marker with their state as Home Assistant shows it; a tap opens
+//   Home Assistant's keypad.
+// - Texts in English, German and French.
 //
 // Place a camera like any device in NextFloor's editor (room → Devices → Place). Its settings (mount, field of view,
 // reach, tilt, detections, what a tap does) are in the device's form; the handle in front of it turns it.
@@ -278,7 +281,7 @@ const alarm = {
 const plugin = {
   id: "cameras",
   name: "Cameras",
-  version: "1.0.0",
+  version: "1.1.0",
   apiVersion: 1,
   devices: [camera, alarm],
 };
