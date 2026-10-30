@@ -19,13 +19,12 @@ const TEXT = {
     reach: "Reach (m)",
     tilt: "Looks down (°)",
     tiltHint: "How far the camera looks below the horizon. With its height it decides where the view meets the floor.",
-    detect: "Turns red on",
-    any: "Any detection",
+    detect: "Turns red on: {kind}",
     person: "Persons",
     vehicle: "Vehicles",
     animal: "Animals",
-    motion: "Motion only",
-    nothing: "Never",
+    motion: "Motion",
+    motionHint: "Motion sensors, and detection sensors of no known kind.",
     wedgeTap: "A tap on the wedge opens the camera",
     wedgeTapHint: "Off: a tap on the wedge goes through to the room.",
     open: "A tap opens",
@@ -49,13 +48,12 @@ const TEXT = {
     reach: "Reichweite (m)",
     tilt: "Neigung nach unten (°)",
     tiltHint: "Wie weit die Kamera unter den Horizont schaut. Mit ihrer Höhe bestimmt das, wo der Blick den Boden trifft.",
-    detect: "Wird rot bei",
-    any: "Jeder Erkennung",
+    detect: "Wird rot bei: {kind}",
     person: "Personen",
     vehicle: "Fahrzeugen",
     animal: "Tieren",
-    motion: "Nur Bewegung",
-    nothing: "Nie",
+    motion: "Bewegung",
+    motionHint: "Bewegungsmelder und Erkennungssensoren ohne bekannte Art.",
     wedgeTap: "Antippen des Kegels öffnet die Kamera",
     wedgeTapHint: "Aus: Antippen des Kegels geht durch zum Raum.",
     open: "Antippen öffnet",
@@ -79,13 +77,12 @@ const TEXT = {
     reach: "Portée (m)",
     tilt: "Inclinaison vers le bas (°)",
     tiltHint: "De combien la caméra regarde sous l'horizon. Avec sa hauteur, cela décide où le champ de vision touche le sol.",
-    detect: "Devient rouge pour",
-    any: "Toute détection",
+    detect: "Devient rouge pour : {kind}",
     person: "Personnes",
     vehicle: "Véhicules",
     animal: "Animaux",
-    motion: "Mouvement seulement",
-    nothing: "Jamais",
+    motion: "Mouvement",
+    motionHint: "Les détecteurs de mouvement, et les capteurs de détection d'un type inconnu.",
     wedgeTap: "Un appui sur le cône ouvre la caméra",
     wedgeTapHint: "Désactivé : un appui sur le cône passe à la pièce.",
     open: "Un appui ouvre",
@@ -105,6 +102,8 @@ const TEXT = {
 
 /** The plugin's texts in every language it has, for NextFloor's form fields. */
 const both = (key) => Object.fromEntries(Object.entries(TEXT).map(([lang, texts]) => [lang, texts[key]]));
+/** The label of the setting that turns the wedge red for one kind of detection, in every language. */
+const redFor = (kind) => Object.fromEntries(Object.entries(TEXT).map(([lang, texts]) => [lang, texts.detect.replace("{kind}", texts[kind])]));
 const textOf = (hass, key) => (TEXT[(hass?.language ?? "en").slice(0, 2)] ?? TEXT.en)[key];
 
 const DETECTING = new Set(["on", "detected", "home"]);
@@ -131,11 +130,13 @@ function detectors(hass, cameraId) {
     .filter(Boolean);
 }
 
-/** Whether the camera sees what its setting asks for right now. */
-function sees(hass, cameraId, wanted) {
-  if (wanted === "nothing") return false;
-  return detectors(hass, cameraId).some((d) => (wanted === "any" || d.kind === wanted) && DETECTING.has(hass.states[d.id]?.state));
+/** Whether the camera sees one of the kinds of detection asked for (null: any kind) right now. */
+function sees(hass, cameraId, kinds) {
+  return detectors(hass, cameraId).some((d) => (!kinds || kinds.includes(d.kind)) && DETECTING.has(hass.states[d.id]?.state));
 }
+
+/** The kinds of detection that turn the camera's wedge red. */
+const redKinds = (settings) => Object.keys(KINDS).concat("motion").filter((kind) => settings[`red_${kind}`] !== false);
 
 const DEG = Math.PI / 180;
 
@@ -197,17 +198,14 @@ const camera = {
     { key: "tilt", label: both("tilt"), type: "number", default: 25, min: 0, max: 90, step: 5, hint: both("tiltHint") },
     { key: "wedge", label: both("wedge"), type: "boolean", default: true },
     { key: "wedge_level", label: both("wedgeLevel"), type: "number", default: 100, min: 15, max: 100, step: 5, hint: both("wedgeLevelHint") },
-    {
-      key: "detect",
-      label: both("detect"),
-      type: "select",
-      default: "any",
-      options: [["any", both("any")], ["person", both("person")], ["vehicle", both("vehicle")], ["animal", both("animal")], ["motion", both("motion")], ["nothing", both("nothing")]],
-    },
+    { key: "red_person", label: redFor("person"), type: "boolean", default: true },
+    { key: "red_vehicle", label: redFor("vehicle"), type: "boolean", default: true },
+    { key: "red_animal", label: redFor("animal"), type: "boolean", default: true },
+    { key: "red_motion", label: redFor("motion"), type: "boolean", default: true, hint: both("motionHint") },
     { key: "wedge_tap", label: both("wedgeTap"), type: "boolean", default: true, hint: both("wedgeTapHint") },
     { key: "open", label: both("open"), type: "select", default: "corner", options: [["corner", both("corner")], ["dialog", both("dialog")]] },
   ],
-  marker: ({ hass, entityId }) => ({ icon: "mdi:cctv", text: "", active: sees(hass, entityId, "any") }),
+  marker: ({ hass, entityId }) => ({ icon: "mdi:cctv", text: "", active: sees(hass, entityId, null) }),
   watch: ({ hass, entityId }) => detectors(hass, entityId).map((d) => d.id),
   floorWedge: ({ hass, entityId, placement, settings }) => {
     if (settings.wedge === false) return null;
@@ -215,7 +213,7 @@ const camera = {
     const reach = Number(settings.reach);
     // a dome looks all around and straight down; a wall camera looks ahead
     const { near, far } = dome ? { near: 0, far: Math.min(reach, Math.max(1.5, placement.y * 1.6)) } : onFloor(placement.y, Number(settings.tilt), Number(settings.fov), reach);
-    const red = sees(hass, entityId, settings.detect);
+    const red = sees(hass, entityId, redKinds(settings));
     // the wedge's brightness; red on a detection stays at least half as bright so it is still seen
     const level = Number(settings.wedge_level) / 100;
     return { angle: dome ? 360 : Number(settings.fov), reach: far, near, color: red ? "#e5222e" : "#0b4a5c", opacity: red ? 0.85 * Math.max(0.5, level) : 0.7 * level, tapThrough: settings.wedge_tap === false };
