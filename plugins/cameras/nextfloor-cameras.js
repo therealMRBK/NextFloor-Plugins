@@ -31,6 +31,7 @@ const TEXT = {
     open: "A tap opens",
     corner: "A small window in the corner",
     dialog: "Home Assistant's dialog",
+    wedge: "Show the field of view on the floor",
     big: "Open large",
     armed: "Armed",
     disarmed: "Off",
@@ -58,6 +59,7 @@ const TEXT = {
     open: "Antippen öffnet",
     corner: "Ein kleines Fenster in der Ecke",
     dialog: "Den Dialog von Home Assistant",
+    wedge: "Sichtfeld auf dem Boden zeigen",
     big: "Groß öffnen",
     armed: "Scharf",
     disarmed: "Aus",
@@ -85,6 +87,7 @@ const TEXT = {
     open: "Un appui ouvre",
     corner: "Une petite fenêtre dans le coin",
     dialog: "La fenêtre de Home Assistant",
+    wedge: "Afficher le cône au sol",
     big: "Ouvrir en grand",
     armed: "Armée",
     disarmed: "Désarmée",
@@ -186,6 +189,7 @@ const camera = {
     { key: "fov", label: both("fov"), type: "number", default: 90, min: 20, max: 180, step: 5 },
     { key: "reach", label: both("reach"), type: "number", default: 6, min: 1, max: 30, step: 0.5 },
     { key: "tilt", label: both("tilt"), type: "number", default: 25, min: 0, max: 90, step: 5, hint: both("tiltHint") },
+    { key: "wedge", label: both("wedge"), type: "boolean", default: true },
     {
       key: "detect",
       label: both("detect"),
@@ -199,6 +203,7 @@ const camera = {
   marker: ({ hass, entityId }) => ({ icon: "mdi:cctv", text: "", active: sees(hass, entityId, "any") }),
   watch: ({ hass, entityId }) => detectors(hass, entityId).map((d) => d.id),
   floorWedge: ({ hass, entityId, placement, settings }) => {
+    if (settings.wedge === false) return null;
     const dome = settings.mount === "dome";
     const reach = Number(settings.reach);
     // a dome looks all around and straight down; a wall camera looks ahead
