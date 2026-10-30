@@ -246,6 +246,16 @@ const camera = {
 
 const ARMED = /^armed_/;
 
+/** The state as Home Assistant itself shows it, in the user's language ("Armed away", "Armée (absent)", …), if it can. */
+function haState(hass, state) {
+  try {
+    const text = typeof hass.formatEntityState === "function" ? hass.formatEntityState(state) : null;
+    return typeof text === "string" && text ? text.slice(0, 60) : null;
+  } catch {
+    return null;
+  }
+}
+
 const alarm = {
   match: (entityId) => entityId.startsWith("alarm_control_panel."),
   kind: "sensor",
@@ -254,7 +264,7 @@ const alarm = {
     const key = s === "triggered" ? "triggered" : ARMED.test(s) ? "armed" : s === "arming" ? "arming" : s === "pending" ? "pending" : s === "disarmed" ? "disarmed" : null;
     return {
       icon: ARMED.test(s) || s === "triggered" ? "mdi:shield-lock" : s === "disarmed" ? "mdi:shield-off-outline" : "mdi:shield-half-full",
-      text: key ? textOf(hass, key) : s,
+      text: s === "triggered" ? textOf(hass, key) : haState(hass, state) ?? (key ? textOf(hass, key) : s),
       active: ARMED.test(s) || ["triggered", "arming", "pending"].includes(s),
     };
   },
