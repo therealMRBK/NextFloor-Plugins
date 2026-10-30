@@ -65,10 +65,37 @@ const TEXT = {
     pending: "Eingangsverzögerung",
     triggered: "ALARM",
   },
+  fr: {
+    mount: "Fixation de la caméra",
+    wall: "Murale",
+    dome: "Plafond (dôme)",
+    fov: "Angle de vue (°)",
+    reach: "Portée (m)",
+    tilt: "Inclinaison vers le bas (°)",
+    tiltHint: "De combien la caméra regarde sous l'horizon. Avec sa hauteur, cela décide où le champ de vision touche le sol.",
+    detect: "Devient rouge pour",
+    any: "Toute détection",
+    person: "Personnes",
+    vehicle: "Véhicules",
+    animal: "Animaux",
+    motion: "Mouvement seulement",
+    nothing: "Jamais",
+    wedgeTap: "Un appui sur le cône ouvre la caméra",
+    wedgeTapHint: "Désactivé : un appui sur le cône passe à la pièce.",
+    open: "Un appui ouvre",
+    corner: "Une petite fenêtre dans le coin",
+    dialog: "La fenêtre de Home Assistant",
+    big: "Ouvrir en grand",
+    armed: "Armée",
+    disarmed: "Désarmée",
+    arming: "Armement",
+    pending: "Délai d'entrée",
+    triggered: "ALARME",
+  },
 };
 
-/** The plugin's texts as { en, de } pairs for NextFloor's form fields. */
-const both = (key) => ({ en: TEXT.en[key], de: TEXT.de[key] });
+/** The plugin's texts in every language it has, for NextFloor's form fields. */
+const both = (key) => Object.fromEntries(Object.entries(TEXT).map(([lang, texts]) => [lang, texts[key]]));
 const textOf = (hass, key) => (TEXT[(hass?.language ?? "en").slice(0, 2)] ?? TEXT.en)[key];
 
 const DETECTING = new Set(["on", "detected", "home"]);
