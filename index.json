@@ -10,6 +10,16 @@
       "homepage": "https://github.com/therealMRBK/NextFloor/blob/main/docs/examples/nextfloor-plugin-example.js",
       "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor/7bd88727f6c2a71fab0ab07839579f5309457329/docs/examples/nextfloor-plugin-example.js",
       "sha256": "bb9827130ebccbbe7b3d333ee7b84e6fd1e392d3afc4180a3673388e6c6f9852"
+    },
+    {
+      "id": "cameras",
+      "name": "Cameras",
+      "description": "Security cameras and alarm panels in the plan: a field-of-view wedge on the floor that stops at walls and turns red on detection, the live picture in a corner window on a tap, alarm state with the keypad. Needs NextFloor 0.15.0.",
+      "author": "therealMRBK",
+      "version": "1.0.0",
+      "homepage": "https://github.com/therealMRBK/NextFloor-Plugins/blob/main/plugins/cameras/nextfloor-cameras.js",
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/dfd6a478d8cc3006b2b6ebccfc7a50d686042c28/plugins/cameras/nextfloor-cameras.js",
+      "sha256": "2a3abe174306222320c1f115a72b0e8d2e1c973a9c6dec4d2d5cd40d295c8762"
     }
   ]
 }
