@@ -32,6 +32,8 @@ const TEXT = {
     corner: "A small window in the corner",
     dialog: "Home Assistant's dialog",
     wedge: "Show the field of view on the floor",
+    wedgeLevel: "Brightness of the field of view (%)",
+    wedgeLevelHint: "While it detects something it stays at least half as bright.",
     big: "Open large",
     armed: "Armed",
     disarmed: "Off",
@@ -60,6 +62,8 @@ const TEXT = {
     corner: "Ein kleines Fenster in der Ecke",
     dialog: "Den Dialog von Home Assistant",
     wedge: "Sichtfeld auf dem Boden zeigen",
+    wedgeLevel: "Helligkeit des Sichtfelds (%)",
+    wedgeLevelHint: "Solange sie etwas erkennt, bleibt es mindestens halb so hell.",
     big: "Groß öffnen",
     armed: "Scharf",
     disarmed: "Aus",
@@ -88,6 +92,8 @@ const TEXT = {
     corner: "Une petite fenêtre dans le coin",
     dialog: "La fenêtre de Home Assistant",
     wedge: "Afficher le cône au sol",
+    wedgeLevel: "Luminosité du cône (%)",
+    wedgeLevelHint: "Pendant une détection, il garde au moins la moitié de sa luminosité.",
     big: "Ouvrir en grand",
     armed: "Armée",
     disarmed: "Désarmée",
@@ -190,6 +196,7 @@ const camera = {
     { key: "reach", label: both("reach"), type: "number", default: 6, min: 1, max: 30, step: 0.5 },
     { key: "tilt", label: both("tilt"), type: "number", default: 25, min: 0, max: 90, step: 5, hint: both("tiltHint") },
     { key: "wedge", label: both("wedge"), type: "boolean", default: true },
+    { key: "wedge_level", label: both("wedgeLevel"), type: "number", default: 100, min: 15, max: 100, step: 5, hint: both("wedgeLevelHint") },
     {
       key: "detect",
       label: both("detect"),
@@ -209,7 +216,9 @@ const camera = {
     // a dome looks all around and straight down; a wall camera looks ahead
     const { near, far } = dome ? { near: 0, far: Math.min(reach, Math.max(1.5, placement.y * 1.6)) } : onFloor(placement.y, Number(settings.tilt), Number(settings.fov), reach);
     const red = sees(hass, entityId, settings.detect);
-    return { angle: dome ? 360 : Number(settings.fov), reach: far, near, color: red ? "#e5222e" : "#0b4a5c", opacity: red ? 0.85 : 0.7, tapThrough: settings.wedge_tap === false };
+    // the wedge's brightness; red on a detection stays at least half as bright so it is still seen
+    const level = Number(settings.wedge_level) / 100;
+    return { angle: dome ? 360 : Number(settings.fov), reach: far, near, color: red ? "#e5222e" : "#0b4a5c", opacity: red ? 0.85 * Math.max(0.5, level) : 0.7 * level, tapThrough: settings.wedge_tap === false };
   },
   tap: ({ hass, entityId, settings, showWindow, moreInfo }) => {
     if (settings.open === "dialog") {
