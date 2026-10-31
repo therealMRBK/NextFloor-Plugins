@@ -15,11 +15,11 @@
       "id": "cameras",
       "name": "Cameras",
       "description": "Security cameras and alarm panels in the plan: a field-of-view wedge on the floor that stops at walls and turns red on detection, the live picture in a corner window on a tap, alarm state with the keypad. Needs NextFloor 0.15.0.",
-      "author": "therealMRBK",
-      "version": "1.0.0",
+      "author": "therealMRBK, Mika2108",
+      "version": "1.1.0",
       "homepage": "https://github.com/therealMRBK/NextFloor-Plugins/blob/main/plugins/cameras/nextfloor-cameras.js",
-      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/dfd6a478d8cc3006b2b6ebccfc7a50d686042c28/plugins/cameras/nextfloor-cameras.js",
-      "sha256": "2a3abe174306222320c1f115a72b0e8d2e1c973a9c6dec4d2d5cd40d295c8762"
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/e273f21562e448db37a6be15a329d5cf570ad44f/plugins/cameras/nextfloor-cameras.js",
+      "sha256": "f6925823da993c60fb73610b64202eab57aa88a87423fa01539adf442638bd83"
     }
   ]
 }
