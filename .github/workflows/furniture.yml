@@ -38,6 +38,18 @@ jobs:
         env:
           RESULT: ${{ runner.temp }}/result.json
         run: python3 scripts/submission.py "$GITHUB_EVENT_PATH" nextfloor
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # pull requests made by this workflow do not start the Validate workflow (GitHub's rule), so the same check runs here
+      - name: The store's check
+        id: store
+        env:
+          RESULT: ${{ runner.temp }}/result.json
+        run: |
+          if [ "$(jq -r .ok "$RESULT")" = "true" ]; then
+            node scripts/validate.mjs && python3 scripts/check_packs.py nextfloor
+          fi
       - name: Pull request, or tell the author what is wrong
         env:
           GH_TOKEN: ${{ github.token }}
