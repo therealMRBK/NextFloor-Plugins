@@ -1,8 +1,19 @@
 # NextFloor Plugins
 
-The plugin store of [NextFloor](https://github.com/therealMRBK/NextFloor), the 3D floor plan for Home Assistant.
+The plugin and furniture store of [NextFloor](https://github.com/therealMRBK/NextFloor), the 3D floor plan for Home Assistant.
 
 Plugins add things NextFloor does not do itself: your own light animations, support for entities it does not know, and small cards in a room's panel. How to write one: [docs/plugins.md](https://github.com/therealMRBK/NextFloor/blob/main/docs/plugins.md).
+
+## Community furniture
+
+Furniture packs built by the community with the **[NextFloor furniture builder](https://therealmrbk.github.io/NextFloor/builder/)**: build furniture in your browser from boxes, cylinders, tapers and round bodies, see it exactly as NextFloor draws it, and save it as a pack.
+
+- **Install:** in NextFloor open **Extensions → Community furniture** and press **Install**.
+- **Share yours:** press **Share in the community store** in the builder. It opens the [furniture form](https://github.com/therealMRBK/NextFloor-Plugins/issues/new?template=furniture.yml) with your pack; send it. A check runs by itself with NextFloor's own import check and turns your pack into a pull request (`packs/<id>.json` and its entry under `packs` in `index.json`). If something is wrong, it says so on the issue; edit the issue and it runs again.
+- **New version:** raise the pack's version in the builder and send it the same way. Only who first shared a pack can update it.
+- Packs are data, not code: NextFloor checks every pack again when it imports it. Shared packs are published under the MIT licence.
+
+## Plugins
 
 ## Using the store
 

@@ -3,7 +3,7 @@
 // Run: node scripts/validate.mjs   (needs Node 20+ and network access)
 
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 
 const MAX_BYTES = 100 * 1024;
 const FILE_URL = /^https:\/\/raw\.githubusercontent\.com\/[\w.-]+\/[\w.-]+\/[0-9a-f]{40}\/[\w./-]+\.m?js$/;
@@ -60,8 +60,47 @@ for (const p of index.plugins) {
   console.log(`${id} ${p.version}: ${Math.round(buf.length / 1024 * 10) / 10} KB, ${hits.length ? `REVIEW: ${hits.join("; ")}` : "nothing suspicious found by the scan (still read the code)"}`);
 }
 
+// Furniture packs: data files in this repository (packs/<id>.json), listed with their checksum. NextFloor's own import
+// check of their content runs in the workflow (scripts/check_packs.py).
+const packs = index.packs ?? [];
+if (!Array.isArray(packs)) fail("packs", "must be a list");
+const PACK_URL = "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/";
+const listed = new Set();
+for (const p of Array.isArray(packs) ? packs : []) {
+  const id = String(p?.id ?? "?");
+  if (!/^[a-z0-9][a-z0-9_.-]{0,39}$/.test(id) || id.includes("..")) fail(`pack ${id}`, "id: lower case letters, digits, '.', '_' and '-' only (max. 40)");
+  if (id.startsWith("nextfloor.")) fail(`pack ${id}`, "ids starting with nextfloor. are kept for the packs that come with NextFloor");
+  if (listed.has(id)) fail(`pack ${id}`, "listed twice");
+  listed.add(id);
+  for (const key of ["name", "author", "submitter", "url", "sha256"]) if (typeof p[key] !== "string" || !p[key].trim()) fail(`pack ${id}`, `${key} is missing`);
+  if (!Number.isInteger(p.release) || p.release < 1) fail(`pack ${id}`, "release must be a whole number from 1");
+  if (p.url !== `${PACK_URL}${id}.json`) fail(`pack ${id}`, `url must be ${PACK_URL}${id}.json`);
+  let buf;
+  try {
+    buf = readFileSync(new URL(`../packs/${id}.json`, import.meta.url));
+  } catch {
+    fail(`pack ${id}`, `packs/${id}.json is missing`);
+    continue;
+  }
+  const hash = createHash("sha256").update(buf).digest("hex");
+  if (hash !== p.sha256) fail(`pack ${id}`, `sha256 does not match packs/${id}.json (it is ${hash})`);
+  let file;
+  try {
+    file = JSON.parse(buf.toString("utf8"));
+  } catch {
+    fail(`pack ${id}`, "the file is not JSON");
+    continue;
+  }
+  if (file.id !== id) fail(`pack ${id}`, `the file's id is ${file.id}`);
+  if (Array.isArray(file.items) && file.items.length !== p.items) fail(`pack ${id}`, `items: the file has ${file.items.length}`);
+  console.log(`pack ${id} ${p.release}: ${file.items?.length ?? "?"} item(s), by ${p.author} (@${p.submitter})`);
+}
+for (const f of readdirSync(new URL("../packs/", import.meta.url)).filter((f) => f.endsWith(".json"))) {
+  if (!listed.has(f.slice(0, -5))) fail(`packs/${f}`, "is not listed in index.json");
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} problem(s):\n- ${errors.join("\n- ")}`);
   process.exit(1);
 }
-console.log(`\n${index.plugins.length} plugin(s) OK`);
+console.log(`\n${index.plugins.length} plugin(s) and ${listed.size} furniture pack(s) OK`);

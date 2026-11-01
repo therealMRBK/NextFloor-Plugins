@@ -1,0 +1,68 @@
+name: Furniture pack
+
+# A furniture pack sent through the issue form ("Furniture pack"): checked with NextFloor's own import check, then saved as
+# packs/<id>.json with its index entry on a branch of its own, and offered as a pull request for the maintainer to merge.
+# The issue text is only ever read by scripts/submission.py from the event file; it never reaches the shell.
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: furniture-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'furniture')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: NextFloor's import check
+        uses: actions/checkout@v4
+        with:
+          repository: therealMRBK/NextFloor
+          ref: main
+          path: nextfloor
+          sparse-checkout: custom_components/nextfloor/packs.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install voluptuous
+      - name: Check the pack
+        env:
+          RESULT: ${{ runner.temp }}/result.json
+        run: python3 scripts/submission.py "$GITHUB_EVENT_PATH" nextfloor
+      - name: Pull request, or tell the author what is wrong
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          RESULT: ${{ runner.temp }}/result.json
+        run: |
+          rm -rf nextfloor
+          if [ "$(jq -r .ok "$RESULT")" != "true" ]; then
+            printf 'The pack could not be taken in:\n\n> %s\n\nEdit this issue (the pencil at the top) to fix it; the check runs again.\n' "$(jq -r .reason "$RESULT")" > "$RUNNER_TEMP/comment.md"
+            gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"
+            exit 0
+          fi
+          # the id passed NextFloor's check: lower-case letters, digits, '.', '_' and '-' only
+          id="$(jq -r .id "$RESULT")"
+          branch="furniture/${id}-${ISSUE}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add packs index.json
+          git commit -m "Furniture pack ${id} (#${ISSUE})"
+          git push --force origin "$branch"
+          pr="$(gh pr list --head "$branch" --state open --json url --jq '.[0].url')"
+          if [ -z "$pr" ]; then
+            printf 'Furniture pack `%s` from #%s, checked with NextFloor'"'"'s import check (%s items, release %s).\n\nCloses #%s\n' "$id" "$ISSUE" "$(jq -r .items "$RESULT")" "$(jq -r .release "$RESULT")" "$ISSUE" > "$RUNNER_TEMP/pr.md"
+            pr="$(gh pr create --base main --head "$branch" --title "Furniture pack: ${id}" --body-file "$RUNNER_TEMP/pr.md")"
+          fi
+          printf 'Thank you! The pack passed the check and waits for review: %s\n\nOnce it is merged, it shows up under **Extensions → Community furniture** in NextFloor.\n' "$pr" > "$RUNNER_TEMP/comment.md"
+          gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"

@@ -1,0 +1,32 @@
+name: Furniture pack
+description: Share furniture you built with the NextFloor furniture builder. A check runs by itself and turns it into a pull request.
+title: "Furniture pack: "
+labels: ["furniture"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Built with the [NextFloor furniture builder](https://therealmrbk.github.io/NextFloor/builder/)? The builder put your pack on the clipboard: paste it below.
+        A check runs as soon as you send this. If something is wrong, it says so here; edit the issue and it runs again.
+  - type: textarea
+    id: pack
+    attributes:
+      label: Pack
+      description: The whole pack file (JSON, starts with {"format":"nfpack" …).
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything the reviewer should know (optional).
+    validations:
+      required: false
+  - type: checkboxes
+    id: licence
+    attributes:
+      label: Licence
+      options:
+        - label: I built this furniture myself (or may share it), and it may be published under the MIT licence for everyone to use.
+          required: true

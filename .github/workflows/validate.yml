@@ -17,3 +17,15 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/validate.mjs
+      # the furniture packs through NextFloor's own import check
+      - uses: actions/checkout@v4
+        with:
+          repository: therealMRBK/NextFloor
+          ref: main
+          path: nextfloor
+          sparse-checkout: custom_components/nextfloor/packs.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install voluptuous && python3 scripts/check_packs.py nextfloor
