@@ -1,6 +1,6 @@
 # NextFloor Plugins
 
-The plugin and furniture store of [NextFloor](https://github.com/therealMRBK/NextFloor), the 3D floor plan for Home Assistant.
+The plugin and furniture store of [NextFloor](https://github.com/therealMRBK/NextFloor), the 3D floor plan for Home Assistant. Everything here is free, like NextFloor itself – forever.
 
 Plugins add things NextFloor does not do itself: your own light animations, support for entities it does not know, and small cards in a room's panel. How to write one: [docs/plugins.md](https://github.com/therealMRBK/NextFloor/blob/main/docs/plugins.md).
 
