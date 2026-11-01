@@ -1,0 +1,60 @@
+{
+ "format": "nfpack",
+ "version": 1,
+ "id": "therealmrbk.test",
+ "name": "Test (wird wieder entfernt)",
+ "publisher": "therealMRBK",
+ "release": 1,
+ "description": "End-to-end test of the furniture form",
+ "items": [
+  {
+   "id": "stool",
+   "name": {
+    "de": "Hocker",
+    "en": "Stool"
+   },
+   "size": [
+    0.4,
+    0.4,
+    0.45
+   ],
+   "parts": [
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.9,
+     "h": 0.1,
+     "color": "wood",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.15,
+     "d": 0.15,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "metal",
+     "edges": false,
+     "glow": false,
+     "screen": false
+    }
+   ],
+   "pet": false,
+   "surface": false,
+   "hole": false,
+   "vehicle": false,
+   "electric": false,
+   "stretch": false,
+   "wall_y": 1.0,
+   "climate": false,
+   "mount": "floor"
+  }
+ ]
+}

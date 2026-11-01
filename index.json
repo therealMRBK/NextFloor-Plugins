@@ -22,5 +22,17 @@
       "sha256": "f6925823da993c60fb73610b64202eab57aa88a87423fa01539adf442638bd83"
     }
   ],
-  "packs": []
+  "packs": [
+    {
+      "id": "therealmrbk.test",
+      "name": "Test (wird wieder entfernt)",
+      "description": "End-to-end test of the furniture form",
+      "author": "therealMRBK",
+      "submitter": "therealMRBK",
+      "release": 1,
+      "items": 1,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/therealmrbk.test.json",
+      "sha256": "26bbff856cd61f8f1909ac1501224e5883dc2faebbc8cff8554f215d170f14cc"
+    }
+  ]
 }
