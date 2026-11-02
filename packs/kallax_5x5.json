@@ -1,0 +1,190 @@
+{
+ "format": "nfpack",
+ "version": 1,
+ "id": "kallax_5x5",
+ "name": "Kallax 5x5",
+ "publisher": "Garrus94",
+ "release": 1,
+ "description": "IKEA Kallax 5x5",
+ "items": [
+  {
+   "id": "item",
+   "name": {
+    "de": "Kallax 5x5",
+    "en": "Kallax 5x5"
+   },
+   "size": [
+    1.82,
+    0.39,
+    1.82
+   ],
+   "stretch": true,
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.0209,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.9791,
+     "h": 0.0209,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.489,
+     "z": 0.0,
+     "w": 0.0209,
+     "d": 0.9949,
+     "y": 0.0209,
+     "h": 0.9582,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": -0.489,
+     "z": 0.0,
+     "w": 0.0209,
+     "d": 0.9949,
+     "y": 0.0209,
+     "h": 0.9582,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.2843,
+     "z": 0.0,
+     "w": 0.0066,
+     "d": 0.9872,
+     "y": 0.0209,
+     "h": 0.9582,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": -0.2843,
+     "z": 0.0,
+     "w": 0.0066,
+     "d": 0.9872,
+     "y": 0.0209,
+     "h": 0.9582,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0937,
+     "z": 0.0,
+     "w": 0.0066,
+     "d": 0.9872,
+     "y": 0.0209,
+     "h": 0.9582,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": -0.0937,
+     "z": 0.0,
+     "w": 0.0066,
+     "d": 0.9872,
+     "y": 0.0209,
+     "h": 0.9582,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.9582,
+     "d": 0.9872,
+     "y": 0.2082,
+     "h": 0.0066,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.9582,
+     "d": 0.9872,
+     "y": 0.3989,
+     "h": 0.0066,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.9582,
+     "d": 0.9872,
+     "y": 0.5896,
+     "h": 0.0066,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.9582,
+     "d": 0.9872,
+     "y": 0.7802,
+     "h": 0.0066,
+     "color": "body",
+     "edges": true,
+     "glow": false,
+     "screen": false
+    }
+   ],
+   "hole": false,
+   "vehicle": false,
+   "mount": "floor",
+   "electric": false,
+   "wall_y": 1.0,
+   "climate": false,
+   "pet": false,
+   "surface": false
+  }
+ ]
+}
