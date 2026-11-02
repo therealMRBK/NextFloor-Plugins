@@ -33,6 +33,17 @@
       "items": 1,
       "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/kallax_5x5.json",
       "sha256": "cb99e34713d9bf57b84227e2e0a398dd00bd63d8e66c87999225e834f9708e6c"
+    },
+    {
+      "id": "kallax_all_versions",
+      "name": "IKEA Kallax Collection",
+      "description": "IKEA Kallax Collection with it's 10 versions.",
+      "author": "Garrus94",
+      "submitter": "garrus94",
+      "release": 1,
+      "items": 10,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/kallax_all_versions.json",
+      "sha256": "e1456b3bcf360cc39b5cce14577b95ec5ba2cc864254f33c7d75eda9cc01caba"
     }
   ]
 }
