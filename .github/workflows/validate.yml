@@ -25,7 +25,7 @@ jobs:
           path: nextfloor
           sparse-checkout: custom_components/nextfloor/packs.py
           sparse-checkout-cone-mode: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.13"
       - run: pip install voluptuous && python3 scripts/check_packs.py nextfloor
