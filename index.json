@@ -20,6 +20,16 @@
       "homepage": "https://github.com/therealMRBK/NextFloor-Plugins/blob/main/plugins/cameras/nextfloor-cameras.js",
       "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/e273f21562e448db37a6be15a329d5cf570ad44f/plugins/cameras/nextfloor-cameras.js",
       "sha256": "f6925823da993c60fb73610b64202eab57aa88a87423fa01539adf442638bd83"
+    },
+    {
+      "id": "alarm-shield",
+      "name": "Alarm-Schutzschild",
+      "description": "Shows a translucent shield around the house when the Home Assistant alarm is armed, with distinct effects for entry delay and triggered alarms. Includes a preview and saves its display settings in the NextFloor plan.",
+      "author": "alex1255",
+      "version": "1.0.1",
+      "homepage": "https://github.com/alex1255/nextfloor-alarmo-shield",
+      "url": "https://raw.githubusercontent.com/alex1255/nextfloor-alarmo-shield/7c7b58eff39fae1fdd629ed5dcf3d71a2c7395b3/nextfloor-alarmo-shield.js",
+      "sha256": "a40679479199d296f9985662f4c0294f697de21826be5cb66989fc6b577e26a8"
     }
   ],
   "packs": [
