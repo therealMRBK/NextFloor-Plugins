@@ -21,9 +21,9 @@ jobs:
     if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'furniture')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: NextFloor's import check
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: therealMRBK/NextFloor
           ref: main

@@ -12,13 +12,13 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: node scripts/validate.mjs
       # the furniture packs through NextFloor's own import check
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: therealMRBK/NextFloor
           ref: main
