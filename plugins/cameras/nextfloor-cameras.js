@@ -15,6 +15,10 @@
 
 const TEXT = {
   en: {
+    ownPerson: "Own sensor for persons",
+    ownVehicle: "Own sensor for vehicles",
+    ownAnimal: "Own sensor for animals",
+    ownHint: "Optional. Use it when the camera shares one device with others (an NVR) or its detections are not found by themselves.",
     mount: "Camera mount",
     wall: "Wall",
     dome: "Ceiling (dome)",
@@ -44,6 +48,10 @@ const TEXT = {
     triggered: "ALARM",
   },
   de: {
+    ownPerson: "Eigener Sensor für Personen",
+    ownVehicle: "Eigener Sensor für Fahrzeuge",
+    ownAnimal: "Eigener Sensor für Tiere",
+    ownHint: "Optional. Nutze ihn, wenn die Kamera ein Gerät mit anderen teilt (ein NVR) oder ihre Erkennungen nicht von selbst gefunden werden.",
     mount: "Montage",
     wall: "Wand",
     dome: "Decke (Dome)",
@@ -73,6 +81,10 @@ const TEXT = {
     triggered: "ALARM",
   },
   fr: {
+    ownPerson: "Capteur propre pour les personnes",
+    ownVehicle: "Capteur propre pour les véhicules",
+    ownAnimal: "Capteur propre pour les animaux",
+    ownHint: "Facultatif. À utiliser si la caméra partage un appareil avec d'autres (un NVR) ou si ses détections ne sont pas trouvées seules.",
     mount: "Fixation de la caméra",
     wall: "Murale",
     dome: "Plafond (dôme)",
@@ -116,10 +128,16 @@ const KINDS = {
   animal: /animal|pet|dog|cat|bird/,
 };
 
-/** The binary sensors on the camera's device that say it sees something, with the kind each one reports. */
-function detectors(hass, cameraId) {
+/** The sensors the user picked for this camera by hand, each for one kind (an NVR keeps all its cameras on one device). */
+const OWN = { person: "own_person", vehicle: "own_vehicle", animal: "own_animal" };
+const ownDetectors = (settings) => Object.entries(OWN).flatMap(([kind, key]) => (typeof settings?.[key] === "string" && settings[key] ? [{ id: settings[key], kind }] : []));
+
+/** The binary sensors on the camera's device that say it sees something, with the kind each one reports, plus the ones picked by hand. */
+function detectors(hass, cameraId, settings) {
+  const own = ownDetectors(settings);
+  // sensors picked by hand replace the automatic ones of their kind, so a shared NVR device does not light up every camera
   const device = hass.entities?.[cameraId]?.device_id;
-  if (!device || !hass.entities) return [];
+  if (!device || !hass.entities) return own;
   return Object.values(hass.entities)
     .filter((e) => e.device_id === device && e.entity_id.startsWith("binary_sensor."))
     .map((e) => {
@@ -130,12 +148,14 @@ function detectors(hass, cameraId) {
       const kind = Object.keys(KINDS).find((k) => KINDS[k].test(name)) ?? "motion";
       return { id: e.entity_id, kind };
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .filter((d) => !own.some((o) => o.kind === d.kind))
+    .concat(own);
 }
 
 /** Whether the camera sees one of the kinds of detection asked for (null: any kind) right now. */
-function sees(hass, cameraId, kinds) {
-  return detectors(hass, cameraId).some((d) => (!kinds || kinds.includes(d.kind)) && DETECTING.has(hass.states[d.id]?.state));
+function sees(hass, cameraId, kinds, settings) {
+  return detectors(hass, cameraId, settings).some((d) => (!kinds || kinds.includes(d.kind)) && DETECTING.has(hass.states[d.id]?.state));
 }
 
 /** The kinds of detection that turn the camera's wedge red. */
@@ -205,18 +225,21 @@ const camera = {
     { key: "red_vehicle", label: redFor("vehicle"), type: "boolean", default: true },
     { key: "red_animal", label: redFor("animal"), type: "boolean", default: true },
     { key: "red_motion", label: redFor("motion"), type: "boolean", default: true, hint: both("motionHint") },
+    { key: "own_person", label: both("ownPerson"), type: "entity", default: "", domains: ["binary_sensor"], hint: both("ownHint") },
+    { key: "own_vehicle", label: both("ownVehicle"), type: "entity", default: "", domains: ["binary_sensor"] },
+    { key: "own_animal", label: both("ownAnimal"), type: "entity", default: "", domains: ["binary_sensor"] },
     { key: "wedge_tap", label: both("wedgeTap"), type: "boolean", default: true, hint: both("wedgeTapHint") },
     { key: "open", label: both("open"), type: "select", default: "corner", options: [["corner", both("corner")], ["dialog", both("dialog")]] },
   ],
-  marker: ({ hass, entityId }) => ({ icon: "mdi:cctv", text: "", active: sees(hass, entityId, null) }),
-  watch: ({ hass, entityId }) => detectors(hass, entityId).map((d) => d.id),
+  marker: ({ hass, entityId, settings }) => ({ icon: "mdi:cctv", text: "", active: sees(hass, entityId, null, settings) }),
+  watch: ({ hass, entityId, settings }) => detectors(hass, entityId, settings).map((d) => d.id),
   floorWedge: ({ hass, entityId, placement, settings }) => {
     if (settings.wedge === false) return null;
     const dome = settings.mount === "dome";
     const reach = Number(settings.reach);
     // a dome looks all around and straight down; a wall camera looks ahead
     const { near, far } = dome ? { near: 0, far: Math.min(reach, Math.max(1.5, placement.y * 1.6)) } : onFloor(placement.y, Number(settings.tilt), Number(settings.fov), reach);
-    const red = sees(hass, entityId, redKinds(settings));
+    const red = sees(hass, entityId, redKinds(settings), settings);
     // the wedge's brightness; red on a detection stays at least half as bright so it is still seen
     const level = Number(settings.wedge_level) / 100;
     return { angle: dome ? 360 : Number(settings.fov), reach: far, near, color: red ? "#e5222e" : "#0b4a5c", opacity: red ? 0.85 * Math.max(0.5, level) : 0.7 * level, tapThrough: settings.wedge_tap === false };
@@ -281,7 +304,7 @@ const alarm = {
 const plugin = {
   id: "cameras",
   name: "Cameras",
-  version: "1.1.0",
+  version: "1.2.0",
   apiVersion: 1,
   devices: [camera, alarm],
 };
