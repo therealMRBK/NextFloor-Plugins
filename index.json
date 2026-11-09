@@ -14,7 +14,7 @@
     {
       "id": "cameras",
       "name": "Cameras",
-      "description": "Security cameras and alarm panels in the plan: a field-of-view wedge on the floor that stops at walls and turns red on detection, the live picture in a corner window on a tap, alarm state with the keypad. Pick your own detection sensors per camera (person, vehicle, animal) when an NVR shares one device. Needs NextFloor 0.28.0.",
+      "description": "Security cameras and alarm panels in the plan: a field-of-view wedge that stops at walls and turns red on detection, live picture in a corner window, alarm state with keypad. Own detection sensors per camera. Needs NextFloor 0.28.0.",
       "author": "therealMRBK, Mika2108",
       "version": "1.2.0",
       "homepage": "https://github.com/therealMRBK/NextFloor-Plugins/blob/main/plugins/cameras/nextfloor-cameras.js",
