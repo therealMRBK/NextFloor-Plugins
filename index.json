@@ -56,6 +56,17 @@
       "sha256": "e1456b3bcf360cc39b5cce14577b95ec5ba2cc864254f33c7d75eda9cc01caba"
     },
     {
+      "id": "perg01",
+      "name": "Pergola",
+      "description": "Pergola mit Lamellendach Metall 4x6m",
+      "author": "Uwe",
+      "submitter": "uwesteebws-a11y",
+      "release": 1,
+      "items": 2,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/perg01.json",
+      "sha256": "a8a49f6bd9a6ea00c972e449451e23eabefe8f1b17a91728b0ea1d7e9e4b79bd"
+    },
+    {
       "id": "peter.fahrrad",
       "name": "Fahrrad-Pack",
       "description": "Zubehör rund ums E-Bike",
@@ -67,17 +78,6 @@
       "sha256": "8af33d58d8b24279eda9f72d71eaa34ccb954625eea50261e354404233b1ee5e"
     },
     {
-      "id": "peter.werkstatt",
-      "name": "Werkstatt-Pack",
-      "description": "CNC-Fräse und CO2-Laser für die Werkstatt",
-      "author": "Peter",
-      "submitter": "peterwup",
-      "release": 1,
-      "items": 2,
-      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/peter.werkstatt.json",
-      "sha256": "af2cf5b88307c9c29da056274bac02edabbe70102c6effeac1362a9c3b87793b"
-    },
-    {
       "id": "peter.it",
       "name": "IT-Pack",
       "description": "Rechner und Netzwerkgeräte fürs Heimnetz",
@@ -87,6 +87,17 @@
       "items": 1,
       "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/peter.it.json",
       "sha256": "6f9b16973b58e2ad4fd52e296dafc03ba7593f29d3ded47151232bd557780ef6"
+    },
+    {
+      "id": "peter.werkstatt",
+      "name": "Werkstatt-Pack",
+      "description": "CNC-Fräse und CO2-Laser für die Werkstatt",
+      "author": "Peter",
+      "submitter": "peterwup",
+      "release": 1,
+      "items": 2,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/peter.werkstatt.json",
+      "sha256": "af2cf5b88307c9c29da056274bac02edabbe70102c6effeac1362a9c3b87793b"
     }
   ]
 }
