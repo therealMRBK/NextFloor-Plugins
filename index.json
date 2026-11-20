@@ -34,6 +34,17 @@
   ],
   "packs": [
     {
+      "id": "ca01",
+      "name": "Carport",
+      "description": "",
+      "author": "Uwe",
+      "submitter": "uwesteebws-a11y",
+      "release": 1,
+      "items": 1,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/ca01.json",
+      "sha256": "19765826e3730081cab0b944cdeeeb0df0f6d542f29fd7c28145585dbf328176"
+    },
+    {
       "id": "kallax_5x5",
       "name": "Kallax 5x5",
       "description": "IKEA Kallax 5x5",
