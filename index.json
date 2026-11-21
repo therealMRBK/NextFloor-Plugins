@@ -45,6 +45,17 @@
       "sha256": "19765826e3730081cab0b944cdeeeb0df0f6d542f29fd7c28145585dbf328176"
     },
     {
+      "id": "davvarn.ikea_bedroom_office",
+      "name": "IKEA Bedroom, Office, Kids & Outdoor",
+      "description": "IKEA beds, dressers, wardrobes, desks, kids & outdoor furniture (MALM, BRIMNES, RÅDMANSÖ, HEMNES, PAX, NORDLI, ALEX, BEKANT, MARKUS, TROFAST, SNIGLAR, ANTILOP, NÄMMARÖ).",
+      "author": "Davvarn",
+      "submitter": "davvarn",
+      "release": 1,
+      "items": 26,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/davvarn.ikea_bedroom_office.json",
+      "sha256": "b44f7a4405d33a22991403a70c905b2417011b71522d9195c20d333f5de016ee"
+    },
+    {
       "id": "kallax_5x5",
       "name": "Kallax 5x5",
       "description": "IKEA Kallax 5x5",
