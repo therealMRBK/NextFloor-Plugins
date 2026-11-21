@@ -45,6 +45,17 @@
       "sha256": "19765826e3730081cab0b944cdeeeb0df0f6d542f29fd7c28145585dbf328176"
     },
     {
+      "id": "davvarn.ikea_vitrines",
+      "name": "IKEA Display Cabinets & Vitrines",
+      "description": "22 IKEA glass-door display cabinets & vitrines (incl. discontinued classics like DETOLF, LIATORP, REGISSÖR, KLINGSBO, BERTBY).",
+      "author": "Davvarn",
+      "submitter": "davvarn",
+      "release": 1,
+      "items": 22,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/davvarn.ikea_vitrines.json",
+      "sha256": "cc37b0dbfe5b1b47d2b19693b939d168384f7ad821aca0c9c8bd3c4b4923cecc"
+    },
+    {
       "id": "kallax_5x5",
       "name": "Kallax 5x5",
       "description": "IKEA Kallax 5x5",
