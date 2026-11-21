@@ -1,0 +1,5079 @@
+{
+ "format": "nfpack",
+ "version": 1,
+ "id": "davvarn.ikea_living_dining",
+ "name": "IKEA Living Room, Storage & Dining",
+ "publisher": "Davvarn",
+ "description": "IKEA shelving, sofas, armchairs, coffee & dining tables (BILLY, KALLAX, IVAR, BESTÅ, EKET, FJÄLLBO, POÄNG, STRANDMON, DYVLINGE, STOCKHOLM, SKOGSTA, TOBIAS, etc.).",
+ "release": 1,
+ "items": [
+  {
+   "id": "radmanso_tv_bench",
+   "name": {
+    "en": "IKEA RÅDMANSÖ TV Bench",
+    "sv": "IKEA RÅDMANSÖ TV-bänk",
+    "de": "IKEA RÅDMANSÖ TV-Bank"
+   },
+   "size": [
+    1.8,
+    0.44,
+    0.56
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "walnut",
+     "name": {
+      "en": "Walnut",
+      "sv": "Valnöt",
+      "de": "Walnuss"
+     },
+     "hex": "#5c3d28"
+    },
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.46,
+     "z": -0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.25,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.46,
+     "z": -0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.25,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.46,
+     "z": 0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.25,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.46,
+     "z": 0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.25,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.25,
+     "h": 0.75,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.32,
+     "z": 0.5,
+     "w": 0.03,
+     "d": 0.03,
+     "y": 0.62,
+     "h": 0.05,
+     "color": "#c9a354",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.32,
+     "z": 0.5,
+     "w": 0.03,
+     "d": 0.03,
+     "y": 0.62,
+     "h": 0.05,
+     "color": "#c9a354",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "soderhamn_3",
+   "name": {
+    "en": "IKEA SÖDERHAMN 3-seat Sofa",
+    "sv": "IKEA SÖDERHAMN 3-sitssoffa",
+    "de": "IKEA SÖDERHAMN 3er-Sofa"
+   },
+   "size": [
+    1.86,
+    0.99,
+    0.83
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Dark grey",
+      "sv": "Mörkgrå",
+      "de": "Dunkelgrau"
+     },
+     "hex": "#4a4e54"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Olive green",
+      "sv": "Olivgrön",
+      "de": "Olivgrün"
+     },
+     "hex": "#556450"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Navy",
+      "sv": "Marinblå",
+      "de": "Marine"
+     },
+     "hex": "#2f4058"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 0.98,
+     "y": 0.16,
+     "h": 0.3,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.41,
+     "w": 1.0,
+     "d": 0.16,
+     "y": 0.46,
+     "h": 0.42,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.45,
+     "z": -0.4,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.45,
+     "z": -0.4,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.45,
+     "z": 0.4,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.45,
+     "z": 0.4,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.25,
+     "z": -0.28,
+     "w": 0.44,
+     "d": 0.16,
+     "y": 0.48,
+     "h": 0.48,
+     "color": "cushion",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.25,
+     "z": -0.28,
+     "w": 0.44,
+     "d": 0.16,
+     "y": 0.48,
+     "h": 0.48,
+     "color": "cushion",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "kivik_3",
+   "name": {
+    "en": "IKEA KIVIK 3-seat Sofa",
+    "sv": "IKEA KIVIK 3-sitssoffa",
+    "de": "IKEA KIVIK 3er-Sofa"
+   },
+   "size": [
+    2.28,
+    0.95,
+    0.83
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Dark grey",
+      "sv": "Mörkgrå",
+      "de": "Dunkelgrau"
+     },
+     "hex": "#4a4e54"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Olive green",
+      "sv": "Olivgrön",
+      "de": "Olivgrün"
+     },
+     "hex": "#556450"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Navy",
+      "sv": "Marinblå",
+      "de": "Marine"
+     },
+     "hex": "#2f4058"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.8,
+     "d": 0.96,
+     "y": 0.04,
+     "h": 0.46,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.45,
+     "z": 0.0,
+     "w": 0.1,
+     "d": 0.96,
+     "y": 0.04,
+     "h": 0.62,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.45,
+     "z": 0.0,
+     "w": 0.1,
+     "d": 0.96,
+     "y": 0.04,
+     "h": 0.62,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.4,
+     "w": 0.8,
+     "d": 0.18,
+     "y": 0.5,
+     "h": 0.48,
+     "color": "cushion",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "friheten_l",
+   "name": {
+    "en": "IKEA FRIHETEN Corner Sofa-Bed",
+    "sv": "IKEA FRIHETEN Hörn-bäddsoffa",
+    "de": "IKEA FRIHETEN Eckbettsofa"
+   },
+   "size": [
+    2.3,
+    1.51,
+    0.86
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Dark grey",
+      "sv": "Mörkgrå",
+      "de": "Dunkelgrau"
+     },
+     "hex": "#4a4e54"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Olive green",
+      "sv": "Olivgrön",
+      "de": "Olivgrün"
+     },
+     "hex": "#556450"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Navy",
+      "sv": "Marinblå",
+      "de": "Marine"
+     },
+     "hex": "#2f4058"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.18,
+     "w": 1.0,
+     "d": 0.62,
+     "y": 0.05,
+     "h": 0.46,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.3,
+     "z": 0.18,
+     "w": 0.4,
+     "d": 0.64,
+     "y": 0.05,
+     "h": 0.46,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.43,
+     "w": 1.0,
+     "d": 0.14,
+     "y": 0.51,
+     "h": 0.46,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.46,
+     "z": -0.18,
+     "w": 0.08,
+     "d": 0.62,
+     "y": 0.51,
+     "h": 0.25,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.46,
+     "z": 0.0,
+     "w": 0.08,
+     "d": 0.98,
+     "y": 0.51,
+     "h": 0.25,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "strandmon_armchair",
+   "name": {
+    "en": "IKEA STRANDMON Wing Chair",
+    "sv": "IKEA STRANDMON Öronlappsfåtölj",
+    "de": "IKEA STRANDMON Ohrensessel"
+   },
+   "size": [
+    0.82,
+    0.96,
+    1.01
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Dark grey",
+      "sv": "Mörkgrå",
+      "de": "Dunkelgrau"
+     },
+     "hex": "#4a4e54"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Olive green",
+      "sv": "Olivgrön",
+      "de": "Olivgrün"
+     },
+     "hex": "#556450"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Navy",
+      "sv": "Marinblå",
+      "de": "Marine"
+     },
+     "hex": "#2f4058"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.96,
+     "d": 0.92,
+     "y": 0.16,
+     "h": 0.3,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.36,
+     "w": 0.9,
+     "d": 0.22,
+     "y": 0.46,
+     "h": 0.54,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.4,
+     "z": 0.0,
+     "w": 0.16,
+     "d": 0.85,
+     "y": 0.46,
+     "h": 0.24,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.4,
+     "z": 0.0,
+     "w": 0.16,
+     "d": 0.85,
+     "y": 0.46,
+     "h": 0.24,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.38,
+     "z": -0.36,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.38,
+     "z": -0.36,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.38,
+     "z": 0.36,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.38,
+     "z": 0.36,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.16,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "eket_cube",
+   "name": {
+    "en": "IKEA EKET Wall Cube (35x35)",
+    "sv": "IKEA EKET Väggskåp (35x35)",
+    "de": "IKEA EKET Wandschrank (35x35)"
+   },
+   "size": [
+    0.35,
+    0.35,
+    0.35
+   ],
+   "mount": "wall",
+   "wall_y": 1.35,
+   "surface": true,
+   "colors": [
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "oak",
+     "name": {
+      "en": "White stained oak",
+      "sv": "Vitlaserad ek",
+      "de": "Eiche weiß"
+     },
+     "hex": "#c8ad88"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Dark grey",
+      "sv": "Mörkgrå",
+      "de": "Dunkelgrau"
+     },
+     "hex": "#484c52"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Grey-green",
+      "sv": "Grågrön",
+      "de": "Graugrün"
+     },
+     "hex": "#728578"
+    },
+    {
+     "id": "walnut",
+     "name": {
+      "en": "Walnut",
+      "sv": "Valnöt",
+      "de": "Walnuss"
+     },
+     "hex": "#62432e"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "electric": false,
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "eket_4",
+   "name": {
+    "en": "IKEA EKET Cabinet 4-Compartment (70x70)",
+    "sv": "IKEA EKET Skåp med 4 fack (70x70)",
+    "de": "IKEA EKET Schrank 4 Fächer (70x70)"
+   },
+   "size": [
+    0.7,
+    0.35,
+    0.7
+   ],
+   "mount": "wall",
+   "wall_y": 1.15,
+   "surface": true,
+   "colors": [
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "oak",
+     "name": {
+      "en": "White stained oak",
+      "sv": "Vitlaserad ek",
+      "de": "Eiche weiß"
+     },
+     "hex": "#c8ad88"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Dark grey",
+      "sv": "Mörkgrå",
+      "de": "Dunkelgrau"
+     },
+     "hex": "#484c52"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Grey-green",
+      "sv": "Grågrön",
+      "de": "Graugrün"
+     },
+     "hex": "#728578"
+    },
+    {
+     "id": "walnut",
+     "name": {
+      "en": "Walnut",
+      "sv": "Valnöt",
+      "de": "Walnuss"
+     },
+     "hex": "#62432e"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.46,
+     "w": 0.98,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.47,
+     "z": 0.0,
+     "w": 0.06,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.47,
+     "z": 0.0,
+     "w": 0.06,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.06,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.94,
+     "h": 0.06,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 0.96,
+     "y": 0.05,
+     "h": 0.9,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.96,
+     "d": 0.96,
+     "y": 0.48,
+     "h": 0.05,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "electric": false,
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "billy_bookcase",
+   "name": {
+    "en": "IKEA BILLY Bookcase",
+    "sv": "IKEA BILLY Bokhylla",
+    "de": "IKEA BILLY Bücherregal"
+   },
+   "size": [
+    0.8,
+    0.28,
+    2.02
+   ],
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.96,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.05,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.47,
+     "w": 0.94,
+     "d": 0.04,
+     "y": 0.04,
+     "h": 0.93,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.2,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.35,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.5,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.65,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.8,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "kallax_4x2",
+   "name": {
+    "en": "IKEA KALLAX Shelving Unit (4x2)",
+    "sv": "IKEA KALLAX Hylla (4x2)",
+    "de": "IKEA KALLAX Regal (4x2)"
+   },
+   "size": [
+    1.47,
+    0.39,
+    0.77
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.07,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.93,
+     "h": 0.07,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 0.98,
+     "y": 0.48,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.06,
+     "h": 0.88,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.24,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.06,
+     "h": 0.88,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.06,
+     "h": 0.88,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.24,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.06,
+     "h": 0.88,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.06,
+     "h": 0.88,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "kallax_4x4",
+   "name": {
+    "en": "IKEA KALLAX Shelving Unit (4x4)",
+    "sv": "IKEA KALLAX Hylla (4x4)",
+    "de": "IKEA KALLAX Regal (4x4)"
+   },
+   "size": [
+    1.47,
+    0.39,
+    1.47
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.24,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.48,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.72,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.96,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.24,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.24,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "ivar_shelf",
+   "name": {
+    "en": "IKEA IVAR Shelving System",
+    "sv": "IKEA IVAR Hyllsystem",
+    "de": "IKEA IVAR Regalsystem"
+   },
+   "size": [
+    0.89,
+    0.3,
+    1.79
+   ],
+   "colors": [
+    {
+     "id": "pine",
+     "name": {
+      "en": "Natural pine",
+      "sv": "Natur furu",
+      "de": "Kiefer"
+     },
+     "hex": "#d4b07e"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White stain",
+      "sv": "Vitbets",
+      "de": "Weiß lasiert"
+     },
+     "hex": "#ece9e2"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.96,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.05,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.23,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.41,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.59,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.77,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "besta_storage",
+   "name": {
+    "en": "IKEA BESTÅ Storage System",
+    "sv": "IKEA BESTÅ Förvaringskombination",
+    "de": "IKEA BESTÅ Aufbewahrung"
+   },
+   "size": [
+    1.2,
+    0.42,
+    0.74
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 0.96,
+     "y": 0.14,
+     "h": 0.86,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.24,
+     "z": 0.48,
+     "w": 0.48,
+     "d": 0.03,
+     "y": 0.16,
+     "h": 0.82,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.24,
+     "z": 0.48,
+     "w": 0.48,
+     "d": 0.03,
+     "y": 0.16,
+     "h": 0.82,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.44,
+     "z": -0.38,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.14,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.44,
+     "z": 0.38,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.14,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": -0.38,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.14,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.38,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.14,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.44,
+     "z": -0.38,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.14,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.44,
+     "z": 0.38,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.14,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "hemnes_bookcase",
+   "name": {
+    "en": "IKEA HEMNES Bookcase",
+    "sv": "IKEA HEMNES Bokhylla",
+    "de": "IKEA HEMNES Bücherregal"
+   },
+   "size": [
+    0.9,
+    0.37,
+    1.97
+   ],
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.96,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.05,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.47,
+     "w": 0.94,
+     "d": 0.04,
+     "y": 0.04,
+     "h": 0.93,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.23,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.41,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.59,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.77,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "fjallbo_shelf",
+   "name": {
+    "en": "IKEA FJÄLLBO Shelving Unit",
+    "sv": "IKEA FJÄLLBO Hylla",
+    "de": "IKEA FJÄLLBO Regal"
+   },
+   "size": [
+    1.0,
+    0.36,
+    1.36
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "pine",
+     "name": {
+      "en": "Natural pine",
+      "sv": "Natur furu",
+      "de": "Kiefer"
+     },
+     "hex": "#d4b07e"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White stain",
+      "sv": "Vitbets",
+      "de": "Weiß lasiert"
+     },
+     "hex": "#ece9e2"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": -0.46,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": 0.46,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": -0.46,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": 0.46,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.98,
+     "d": 0.96,
+     "y": 0.1,
+     "h": 0.03,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.98,
+     "d": 0.96,
+     "y": 0.42,
+     "h": 0.03,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.98,
+     "d": 0.96,
+     "y": 0.7,
+     "h": 0.03,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.98,
+     "d": 0.96,
+     "y": 0.97,
+     "h": 0.03,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.47,
+     "w": 0.92,
+     "d": 0.03,
+     "y": 0.12,
+     "h": 0.29,
+     "color": "dark",
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "laiva_bookcase",
+   "name": {
+    "en": "IKEA LAIVA Bookcase",
+    "sv": "IKEA LAIVA Bokhylla",
+    "de": "IKEA LAIVA Bücherregal"
+   },
+   "size": [
+    0.62,
+    0.24,
+    1.65
+   ],
+   "colors": [
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#282625"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.47,
+     "z": 0.0,
+     "w": 0.05,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.96,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.94,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 0.05,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.23,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.41,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.59,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.02,
+     "w": 0.9,
+     "d": 0.92,
+     "y": 0.77,
+     "h": 0.02,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "bror_shelf",
+   "name": {
+    "en": "IKEA BROR Shelving Unit",
+    "sv": "IKEA BROR Hylla",
+    "de": "IKEA BROR Regal"
+   },
+   "size": [
+    0.85,
+    0.55,
+    1.9
+   ],
+   "colors": [
+    {
+     "id": "pine",
+     "name": {
+      "en": "Natural pine",
+      "sv": "Natur furu",
+      "de": "Kiefer"
+     },
+     "hex": "#d4b07e"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White stain",
+      "sv": "Vitbets",
+      "de": "Weiß lasiert"
+     },
+     "hex": "#ece9e2"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": -0.46,
+     "w": 0.04,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": 0.46,
+     "w": 0.04,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": -0.46,
+     "w": 0.04,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": 0.46,
+     "w": 0.04,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 1.0,
+     "color": "dark",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.96,
+     "d": 0.96,
+     "y": 0.08,
+     "h": 0.025,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.96,
+     "d": 0.96,
+     "y": 0.36,
+     "h": 0.025,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.96,
+     "d": 0.96,
+     "y": 0.65,
+     "h": 0.025,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.96,
+     "d": 0.96,
+     "y": 0.94,
+     "h": 0.025,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "ikea_ps_cabinet",
+   "name": {
+    "en": "IKEA PS Metal Cabinet",
+    "sv": "IKEA PS Skåp",
+    "de": "IKEA PS Schrank"
+   },
+   "size": [
+    1.19,
+    0.4,
+    0.63
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#eceef0"
+    },
+    {
+     "id": "red",
+     "name": {
+      "en": "Red",
+      "sv": "Röd",
+      "de": "Rot"
+     },
+     "hex": "#b8322a"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Blue",
+      "sv": "Blå",
+      "de": "Blau"
+     },
+     "hex": "#284c7c"
+    },
+    {
+     "id": "black",
+     "name": {
+      "en": "Black",
+      "sv": "Svart",
+      "de": "Schwarz"
+     },
+     "hex": "#24262a"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.24,
+     "h": 0.76,
+     "color": "metal",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.24,
+     "z": 0.49,
+     "w": 0.46,
+     "d": 0.02,
+     "y": 0.28,
+     "h": 0.68,
+     "color": "metal",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.24,
+     "z": 0.49,
+     "w": 0.46,
+     "d": 0.02,
+     "y": 0.28,
+     "h": 0.68,
+     "color": "metal",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.45,
+     "z": -0.4,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.24,
+     "color": "metal",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.45,
+     "z": 0.4,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.24,
+     "color": "metal",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.45,
+     "z": -0.4,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.24,
+     "color": "metal",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.45,
+     "z": 0.4,
+     "w": 0.03,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.24,
+     "color": "metal",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "poang_armchair",
+   "name": {
+    "en": "IKEA POÄNG Armchair",
+    "sv": "IKEA POÄNG Fåtölj",
+    "de": "IKEA POÄNG Sessel"
+   },
+   "size": [
+    0.68,
+    0.82,
+    1.0
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Grey",
+      "sv": "Grå",
+      "de": "Grau"
+     },
+     "hex": "#5c6066"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Green",
+      "sv": "Grön",
+      "de": "Grün"
+     },
+     "hex": "#456b50"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Blue",
+      "sv": "Blå",
+      "de": "Blau"
+     },
+     "hex": "#2f4663"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.46,
+     "z": 0.0,
+     "w": 0.07,
+     "d": 0.92,
+     "y": 0.0,
+     "h": 0.06,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.46,
+     "z": 0.0,
+     "w": 0.07,
+     "d": 0.92,
+     "y": 0.0,
+     "h": 0.06,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.46,
+     "z": 0.36,
+     "w": 0.07,
+     "d": 0.09,
+     "y": 0.06,
+     "h": 0.56,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.46,
+     "z": 0.36,
+     "w": 0.07,
+     "d": 0.09,
+     "y": 0.06,
+     "h": 0.56,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.46,
+     "z": 0.02,
+     "w": 0.08,
+     "d": 0.78,
+     "y": 0.58,
+     "h": 0.05,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.46,
+     "z": 0.02,
+     "w": 0.08,
+     "d": 0.78,
+     "y": 0.58,
+     "h": 0.05,
+     "color": "wood",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.06,
+     "w": 0.82,
+     "d": 0.68,
+     "y": 0.34,
+     "h": 0.12,
+     "color": "cushion",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.32,
+     "w": 0.82,
+     "d": 0.14,
+     "y": 0.42,
+     "h": 0.58,
+     "color": "cushion",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "klippan_loveseat",
+   "name": {
+    "en": "IKEA KLIPPAN Loveseat",
+    "sv": "IKEA KLIPPAN 2-sitssoffa",
+    "de": "IKEA KLIPPAN 2er-Sofa"
+   },
+   "size": [
+    1.8,
+    0.88,
+    0.66
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Grey",
+      "sv": "Grå",
+      "de": "Grau"
+     },
+     "hex": "#5c6066"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Green",
+      "sv": "Grön",
+      "de": "Grün"
+     },
+     "hex": "#456b50"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Blue",
+      "sv": "Blå",
+      "de": "Blau"
+     },
+     "hex": "#2f4663"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.18,
+     "h": 0.44,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.36,
+     "w": 1.0,
+     "d": 0.28,
+     "y": 0.62,
+     "h": 0.38,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.42,
+     "z": 0.0,
+     "w": 0.16,
+     "d": 1.0,
+     "y": 0.62,
+     "h": 0.34,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.42,
+     "z": 0.0,
+     "w": 0.16,
+     "d": 1.0,
+     "y": 0.62,
+     "h": 0.34,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.42,
+     "z": -0.38,
+     "w": 0.04,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.18,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.42,
+     "z": 0.38,
+     "w": 0.04,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.18,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.42,
+     "z": -0.38,
+     "w": 0.04,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.18,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.42,
+     "z": 0.38,
+     "w": 0.04,
+     "d": 0.06,
+     "y": 0.0,
+     "h": 0.18,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "ektorp_uppland_sofa",
+   "name": {
+    "en": "IKEA EKTORP / UPPLAND Sofa",
+    "sv": "IKEA EKTORP / UPPLAND Soffa",
+    "de": "IKEA EKTORP / UPPLAND Sofa"
+   },
+   "size": [
+    2.28,
+    0.92,
+    0.88
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Grey",
+      "sv": "Grå",
+      "de": "Grau"
+     },
+     "hex": "#5c6066"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Green",
+      "sv": "Grön",
+      "de": "Grün"
+     },
+     "hex": "#456b50"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Blue",
+      "sv": "Blå",
+      "de": "Blau"
+     },
+     "hex": "#2f4663"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 0.96,
+     "y": 0.0,
+     "h": 0.5,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.36,
+     "w": 0.8,
+     "d": 0.24,
+     "y": 0.5,
+     "h": 0.5,
+     "color": "cushion",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.44,
+     "z": 0.0,
+     "w": 0.14,
+     "d": 0.96,
+     "y": 0.46,
+     "h": 0.26,
+     "color": "fabric",
+     "paint": true,
+     "axis": "z",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.44,
+     "z": 0.0,
+     "w": 0.14,
+     "d": 0.96,
+     "y": 0.46,
+     "h": 0.26,
+     "color": "fabric",
+     "paint": true,
+     "axis": "z",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "jattebo_sofa",
+   "name": {
+    "en": "IKEA JÄTTEBO Modular Sofa",
+    "sv": "IKEA JÄTTEBO Modulsoffa",
+    "de": "IKEA JÄTTEBO Modulsofa"
+   },
+   "size": [
+    2.4,
+    0.95,
+    0.71
+   ],
+   "colors": [
+    {
+     "id": "beige",
+     "name": {
+      "en": "Beige",
+      "sv": "Beige",
+      "de": "Beige"
+     },
+     "hex": "#cfc6b6"
+    },
+    {
+     "id": "grey",
+     "name": {
+      "en": "Grey",
+      "sv": "Grå",
+      "de": "Grau"
+     },
+     "hex": "#5c6066"
+    },
+    {
+     "id": "green",
+     "name": {
+      "en": "Green",
+      "sv": "Grön",
+      "de": "Grün"
+     },
+     "hex": "#456b50"
+    },
+    {
+     "id": "blue",
+     "name": {
+      "en": "Blue",
+      "sv": "Blå",
+      "de": "Blau"
+     },
+     "hex": "#2f4663"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.04,
+     "w": 1.0,
+     "d": 0.92,
+     "y": 0.02,
+     "h": 0.62,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.38,
+     "w": 1.0,
+     "d": 0.24,
+     "y": 0.64,
+     "h": 0.36,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": 0.04,
+     "w": 0.12,
+     "d": 0.92,
+     "y": 0.64,
+     "h": 0.32,
+     "color": "fabric",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "dyvlinge_chair",
+   "name": {
+    "en": "IKEA DYVLINGE Swivel Armchair",
+    "sv": "IKEA DYVLINGE Snurrfåtölj",
+    "de": "IKEA DYVLINGE Drehsessel"
+   },
+   "size": [
+    0.63,
+    0.75,
+    0.68
+   ],
+   "colors": [
+    {
+     "id": "green",
+     "name": {
+      "en": "Kelinge green",
+      "sv": "Kelinge grön",
+      "de": "Grün"
+     },
+     "hex": "#2b6e44"
+    },
+    {
+     "id": "black",
+     "name": {
+      "en": "Kelinge black",
+      "sv": "Kelinge svart",
+      "de": "Schwarz"
+     },
+     "hex": "#222428"
+    },
+    {
+     "id": "orange",
+     "name": {
+      "en": "Kelinge orange",
+      "sv": "Kelinge orange",
+      "de": "Orange"
+     },
+     "hex": "#d96226"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.82,
+     "d": 0.7,
+     "y": 0.0,
+     "h": 0.06,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.14,
+     "d": 0.14,
+     "y": 0.06,
+     "h": 0.24,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.06,
+     "w": 0.98,
+     "d": 0.78,
+     "y": 0.28,
+     "h": 0.24,
+     "color": "cushion",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.32,
+     "w": 0.98,
+     "d": 0.26,
+     "y": 0.44,
+     "h": 0.56,
+     "color": "cushion",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "frosta_kyrre_stool",
+   "name": {
+    "en": "IKEA FROSTA / KYRRE Stool",
+    "sv": "IKEA FROSTA / KYRRE Pall",
+    "de": "IKEA FROSTA / KYRRE Hocker"
+   },
+   "size": [
+    0.42,
+    0.42,
+    0.45
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "pine",
+     "name": {
+      "en": "Natural pine",
+      "sv": "Natur furu",
+      "de": "Kiefer"
+     },
+     "hex": "#d4b07e"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White stain",
+      "sv": "Vitbets",
+      "de": "Weiß lasiert"
+     },
+     "hex": "#ece9e2"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.92,
+     "d": 0.92,
+     "y": 0.9,
+     "h": 0.1,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.34,
+     "z": -0.28,
+     "w": 0.09,
+     "d": 0.09,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.34,
+     "z": -0.28,
+     "w": 0.09,
+     "d": 0.09,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.36,
+     "w": 0.09,
+     "d": 0.09,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "lack_side_table",
+   "name": {
+    "en": "IKEA LACK Side Table",
+    "sv": "IKEA LACK Sidobord",
+    "de": "IKEA LACK Beistelltisch"
+   },
+   "size": [
+    0.55,
+    0.55,
+    0.45
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.89,
+     "h": 0.11,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": -0.42,
+     "w": 0.1,
+     "d": 0.1,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": 0.42,
+     "w": 0.1,
+     "d": 0.1,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": -0.42,
+     "w": 0.1,
+     "d": 0.1,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": 0.42,
+     "w": 0.1,
+     "d": 0.1,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "lack_coffee_table",
+   "name": {
+    "en": "IKEA LACK Coffee Table",
+    "sv": "IKEA LACK Soffbord",
+    "de": "IKEA LACK Couchtisch"
+   },
+   "size": [
+    0.9,
+    0.55,
+    0.45
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.89,
+     "h": 0.11,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": -0.42,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": 0.42,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": -0.42,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": 0.42,
+     "w": 0.07,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.89,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.86,
+     "d": 0.84,
+     "y": 0.35,
+     "h": 0.03,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "stockholm_coffee_table",
+   "name": {
+    "en": "IKEA STOCKHOLM Coffee Table",
+    "sv": "IKEA STOCKHOLM Soffbord",
+    "de": "IKEA STOCKHOLM Couchtisch"
+   },
+   "size": [
+    1.8,
+    0.59,
+    0.4
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "walnut",
+     "name": {
+      "en": "Walnut",
+      "sv": "Valnöt",
+      "de": "Walnuss"
+     },
+     "hex": "#5e3e28"
+    },
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 0.94,
+     "y": 0.92,
+     "h": 0.08,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.84,
+     "d": 0.72,
+     "y": 0.32,
+     "h": 0.05,
+     "color": "wood",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.4,
+     "z": -0.34,
+     "w": 0.03,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.92,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": -0.4,
+     "z": 0.34,
+     "w": 0.03,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.92,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.4,
+     "z": -0.34,
+     "w": 0.03,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.92,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.4,
+     "z": 0.34,
+     "w": 0.03,
+     "d": 0.07,
+     "y": 0.0,
+     "h": 0.92,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "vittsjo_nesting",
+   "name": {
+    "en": "IKEA VITTSJÖ Nesting Tables",
+    "sv": "IKEA VITTSJÖ Satsbord",
+    "de": "IKEA VITTSJÖ Satztische"
+   },
+   "size": [
+    0.9,
+    0.5,
+    0.5
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#282625"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.94,
+     "h": 0.04,
+     "color": "glass",
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": -0.46,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.98,
+     "color": "dark",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.48,
+     "z": 0.46,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.98,
+     "color": "dark",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": -0.46,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.98,
+     "color": "dark",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.48,
+     "z": 0.46,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.98,
+     "color": "dark",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.18,
+     "z": 0.0,
+     "w": 0.56,
+     "d": 0.9,
+     "y": 0.76,
+     "h": 0.04,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "liatorp_hemnes_coffee",
+   "name": {
+    "en": "IKEA LIATORP / HEMNES Coffee Table",
+    "sv": "IKEA LIATORP / HEMNES Soffbord",
+    "de": "IKEA LIATORP / HEMNES Couchtisch"
+   },
+   "size": [
+    0.93,
+    0.93,
+    0.51
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.84,
+     "d": 0.84,
+     "y": 0.93,
+     "h": 0.04,
+     "color": "glass",
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.46,
+     "w": 1.0,
+     "d": 0.08,
+     "y": 0.88,
+     "h": 0.12,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.46,
+     "w": 1.0,
+     "d": 0.08,
+     "y": 0.88,
+     "h": 0.12,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.46,
+     "z": 0.0,
+     "w": 0.08,
+     "d": 0.84,
+     "y": 0.88,
+     "h": 0.12,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.46,
+     "z": 0.0,
+     "w": 0.08,
+     "d": 0.84,
+     "y": 0.88,
+     "h": 0.12,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.9,
+     "d": 0.9,
+     "y": 0.25,
+     "h": 0.06,
+     "color": "body",
+     "paint": true,
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.45,
+     "z": -0.45,
+     "w": 0.08,
+     "d": 0.08,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.45,
+     "z": 0.45,
+     "w": 0.08,
+     "d": 0.08,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.45,
+     "z": -0.45,
+     "w": 0.08,
+     "d": 0.08,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.45,
+     "z": 0.45,
+     "w": 0.08,
+     "d": 0.08,
+     "y": 0.0,
+     "h": 0.9,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "norden_gateleg",
+   "name": {
+    "en": "IKEA NORDEN Gateleg Table",
+    "sv": "IKEA NORDEN Slagbord",
+    "de": "IKEA NORDEN Klapptisch"
+   },
+   "size": [
+    1.52,
+    0.8,
+    0.74
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "pine",
+     "name": {
+      "en": "Natural pine",
+      "sv": "Natur furu",
+      "de": "Kiefer"
+     },
+     "hex": "#d4b07e"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White stain",
+      "sv": "Vitbets",
+      "de": "Weiß lasiert"
+     },
+     "hex": "#ece9e2"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.94,
+     "h": 0.06,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.2,
+     "d": 0.9,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": -0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": 0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": -0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": 0.4,
+     "w": 0.03,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "skogsta_dining",
+   "name": {
+    "en": "IKEA SKOGSTA Dining Table",
+    "sv": "IKEA SKOGSTA Matbord",
+    "de": "IKEA SKOGSTA Esstisch"
+   },
+   "size": [
+    2.35,
+    1.0,
+    0.73
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.93,
+     "h": 0.07,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": -0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": 0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": -0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": 0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "morbylanga_dining",
+   "name": {
+    "en": "IKEA MÖRBYLÅNGA Dining Table",
+    "sv": "IKEA MÖRBYLÅNGA Matbord",
+    "de": "IKEA MÖRBYLÅNGA Esstisch"
+   },
+   "size": [
+    2.2,
+    1.0,
+    0.74
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.93,
+     "h": 0.07,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": -0.42,
+     "w": 0.05,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": 0.42,
+     "w": 0.05,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": -0.42,
+     "w": 0.05,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": 0.42,
+     "w": 0.05,
+     "d": 0.05,
+     "y": 0.0,
+     "h": 0.93,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "ekedalen_table",
+   "name": {
+    "en": "IKEA EKEDALEN Extendable Table",
+    "sv": "IKEA EKEDALEN Utdragbart bord",
+    "de": "IKEA EKEDALEN Ausziehtisch"
+   },
+   "size": [
+    1.8,
+    0.8,
+    0.75
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "oak",
+     "name": {
+      "en": "Oak",
+      "sv": "Ek",
+      "de": "Eiche"
+     },
+     "hex": "#b89060"
+    },
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black_brown",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#2c2623"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.94,
+     "h": 0.06,
+     "color": "wood",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": -0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.44,
+     "z": 0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": -0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.44,
+     "z": 0.42,
+     "w": 0.04,
+     "d": 0.04,
+     "y": 0.0,
+     "h": 0.94,
+     "color": "wood",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "ingatorp_table",
+   "name": {
+    "en": "IKEA INGATORP Pedestal Table",
+    "sv": "IKEA INGATORP Utdragbart bord",
+    "de": "IKEA INGATORP Ausziehtisch"
+   },
+   "size": [
+    1.1,
+    1.1,
+    0.74
+   ],
+   "surface": true,
+   "colors": [
+    {
+     "id": "white",
+     "name": {
+      "en": "White",
+      "sv": "Vit",
+      "de": "Weiß"
+     },
+     "hex": "#ecece8"
+    },
+    {
+     "id": "black",
+     "name": {
+      "en": "Black-brown",
+      "sv": "Svartbrun",
+      "de": "Schwarzbraun"
+     },
+     "hex": "#282625"
+    }
+   ],
+   "parts": [
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.93,
+     "h": 0.07,
+     "color": "body",
+     "paint": true,
+     "edges": true,
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "cyl",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.16,
+     "d": 0.16,
+     "y": 0.12,
+     "h": 0.82,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.64,
+     "d": 0.1,
+     "y": 0.0,
+     "h": 0.12,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 0.1,
+     "d": 0.64,
+     "y": 0.0,
+     "h": 0.12,
+     "color": "body",
+     "paint": true,
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  },
+  {
+   "id": "tobias_chair",
+   "name": {
+    "en": "IKEA TOBIAS Dining Chair",
+    "sv": "IKEA TOBIAS Stol",
+    "de": "IKEA TOBIAS Stuhl"
+   },
+   "size": [
+    0.55,
+    0.56,
+    0.82
+   ],
+   "parts": [
+    {
+     "shape": "box",
+     "x": -0.42,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 0.84,
+     "y": 0.0,
+     "h": 0.04,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.42,
+     "z": 0.0,
+     "w": 0.04,
+     "d": 0.84,
+     "y": 0.0,
+     "h": 0.04,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": -0.42,
+     "z": 0.38,
+     "w": 0.04,
+     "d": 0.05,
+     "y": 0.04,
+     "h": 0.5,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.42,
+     "z": 0.38,
+     "w": 0.04,
+     "d": 0.05,
+     "y": 0.04,
+     "h": 0.5,
+     "color": "metal",
+     "screen": false,
+     "edges": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": 0.04,
+     "w": 0.88,
+     "d": 0.78,
+     "y": 0.53,
+     "h": 0.04,
+     "color": "glass",
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    },
+    {
+     "shape": "box",
+     "x": 0.0,
+     "z": -0.36,
+     "w": 0.88,
+     "d": 0.05,
+     "y": 0.55,
+     "h": 0.45,
+     "color": "glass",
+     "edges": "faint",
+     "screen": false,
+     "picture": false,
+     "glow": false
+    }
+   ],
+   "climate": false,
+   "hole": false,
+   "pet": false,
+   "wall_y": 1.0,
+   "electric": false,
+   "surface": false,
+   "mount": "floor",
+   "stretch": false,
+   "vehicle": false
+  }
+ ]
+}
