@@ -45,6 +45,17 @@
       "sha256": "19765826e3730081cab0b944cdeeeb0df0f6d542f29fd7c28145585dbf328176"
     },
     {
+      "id": "davvarn.ikea_living_dining",
+      "name": "IKEA Living Room, Storage & Dining",
+      "description": "IKEA shelving, sofas, armchairs, coffee & dining tables (BILLY, KALLAX, IVAR, BESTÅ, EKET, FJÄLLBO, POÄNG, STRANDMON, DYVLINGE, STOCKHOLM, SKOGSTA, TOBIAS, etc.).",
+      "author": "Davvarn",
+      "submitter": "davvarn",
+      "release": 1,
+      "items": 34,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/davvarn.ikea_living_dining.json",
+      "sha256": "442514bd10b96db78d53a3dc242ce529817c56fd09aa8fa6c9ec563f9d8e92cc"
+    },
+    {
       "id": "kallax_5x5",
       "name": "Kallax 5x5",
       "description": "IKEA Kallax 5x5",
