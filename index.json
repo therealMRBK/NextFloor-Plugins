@@ -45,6 +45,17 @@
       "sha256": "19765826e3730081cab0b944cdeeeb0df0f6d542f29fd7c28145585dbf328176"
     },
     {
+      "id": "davvarn.modern_home",
+      "name": "Davvarn Modern Home, Curtains & Maker",
+      "description": "Modern furniture, 6 animated curtains/blinds, asymmetric double kitchen sink, Prusa i3 MK3S+ 3D printer, Philips Hue Playbar & Signe, and acoustic slat walls.",
+      "author": "Davvarn",
+      "submitter": "davvarn",
+      "release": 1,
+      "items": 46,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/davvarn.modern_home.json",
+      "sha256": "0e5e70a61018584fc99a4e1f09719e81c2b96f6d6e600aac8ec88a4a3d4da890"
+    },
+    {
       "id": "kallax_5x5",
       "name": "Kallax 5x5",
       "description": "IKEA Kallax 5x5",
