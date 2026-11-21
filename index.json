@@ -45,6 +45,17 @@
       "sha256": "19765826e3730081cab0b944cdeeeb0df0f6d542f29fd7c28145585dbf328176"
     },
     {
+      "id": "davvarn.ikea_paintings",
+      "name": "IKEA Paintings & Wall Art",
+      "description": "24 IKEA canvases, framed prints, gallery wall sets (BJÖRKSTA, PJÄTTERYD, RIBBA, RÖDALM, GRÖNBY, KNOPPÄNG) with picture support & MOSSLANDA ledge.",
+      "author": "Davvarn",
+      "submitter": "davvarn",
+      "release": 1,
+      "items": 24,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/davvarn.ikea_paintings.json",
+      "sha256": "00646e5152d3c9c5a0acd50bb69ad8f994e159129b1b37f5bdf3e1f6f1dad18e"
+    },
+    {
       "id": "kallax_5x5",
       "name": "Kallax 5x5",
       "description": "IKEA Kallax 5x5",
