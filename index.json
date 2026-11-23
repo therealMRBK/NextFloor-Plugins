@@ -30,6 +30,26 @@
       "homepage": "https://github.com/alex1255/nextfloor-alarmo-shield",
       "url": "https://raw.githubusercontent.com/alex1255/nextfloor-alarmo-shield/7c7b58eff39fae1fdd629ed5dcf3d71a2c7395b3/nextfloor-alarmo-shield.js",
       "sha256": "a40679479199d296f9985662f4c0294f697de21826be5cb66989fc6b577e26a8"
+    },
+    {
+      "id": "raum-szenen",
+      "name": "Room scenes",
+      "description": "Shows all scenes and scripts of a room's area permanently at the top of the room panel. Tapping a button calls scene.turn_on or script.turn_on.",
+      "author": "Noack1978",
+      "version": "1.1.0",
+      "homepage": "https://github.com/Noack1978/nextfloor-raum-szenen",
+      "url": "https://raw.githubusercontent.com/Noack1978/nextfloor-raum-szenen/8abdb24ed720498edcf14d922576cf4ed95a1ce3/nextfloor-raum-szenen.js",
+      "sha256": "d1bce657f6d7792f4e7392307cbacbd11d0e93aa7bfcd116b5f6087061acef78"
+    },
+    {
+      "id": "bewegung",
+      "name": "Motion in the room",
+      "description": "Colours the floor around a motion, occupancy or presence sensor while it detects something. Reach, colour and opacity are set per sensor.",
+      "author": "Noack1978",
+      "version": "1.0.0",
+      "homepage": "https://github.com/Noack1978/nextfloor-bewegung",
+      "url": "https://raw.githubusercontent.com/Noack1978/nextfloor-bewegung/5542d1a624365b2b3d98d1c915071cf225ae2ff1/nextfloor-bewegung.js",
+      "sha256": "afe3c7d1dc18d425df2e06bb1a8da2cdfb4629578bcd9bbc3263607a0fd496a7"
     }
   ],
   "packs": [
