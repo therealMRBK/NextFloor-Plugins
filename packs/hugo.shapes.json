@@ -1,0 +1,226 @@
+{
+ "format": "nfpack",
+ "version": 1,
+ "id": "hugo.shapes",
+ "name": "Shapes",
+ "publisher": "Hugo",
+ "release": 1,
+ "items": [
+  {
+   "id": "ball",
+   "name": {
+    "de": "Kugel",
+    "en": "Ball"
+   },
+   "size": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "stretch": true,
+   "parts": [
+    {
+     "shape": "sweep",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "exp": 2.0,
+     "n": 24,
+     "color": "accent",
+     "stations": [
+      [
+       -0.49,
+       0.4,
+       0.6,
+       0.2
+      ],
+      [
+       -0.45,
+       0.28,
+       0.72,
+       0.44
+      ],
+      [
+       -0.38,
+       0.175,
+       0.825,
+       0.65
+      ],
+      [
+       -0.28,
+       0.085,
+       0.915,
+       0.83
+      ],
+      [
+       -0.15,
+       0.023,
+       0.977,
+       0.954
+      ],
+      [
+       0.0,
+       0.0,
+       1.0,
+       1.0
+      ],
+      [
+       0.15,
+       0.023,
+       0.977,
+       0.954
+      ],
+      [
+       0.28,
+       0.085,
+       0.915,
+       0.83
+      ],
+      [
+       0.38,
+       0.175,
+       0.825,
+       0.65
+      ],
+      [
+       0.45,
+       0.28,
+       0.72,
+       0.44
+      ],
+      [
+       0.49,
+       0.4,
+       0.6,
+       0.2
+      ]
+     ],
+     "picture": false,
+     "screen": false,
+     "glow": false,
+     "edges": false
+    }
+   ],
+   "electric": false,
+   "climate": false,
+   "pet": false,
+   "surface": false,
+   "wall_y": 1.0,
+   "mount": "floor",
+   "hole": false,
+   "vehicle": false
+  },
+  {
+   "id": "ball_lamp",
+   "name": {
+    "de": "Kugellampe",
+    "en": "Ball lamp"
+   },
+   "size": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "stretch": true,
+   "light": "pendant",
+   "mount": "ceiling",
+   "parts": [
+    {
+     "shape": "sweep",
+     "x": 0.0,
+     "z": 0.0,
+     "w": 1.0,
+     "d": 1.0,
+     "y": 0.0,
+     "h": 1.0,
+     "exp": 2.0,
+     "n": 24,
+     "color": "white",
+     "glow": true,
+     "stations": [
+      [
+       -0.49,
+       0.4,
+       0.6,
+       0.2
+      ],
+      [
+       -0.45,
+       0.28,
+       0.72,
+       0.44
+      ],
+      [
+       -0.38,
+       0.175,
+       0.825,
+       0.65
+      ],
+      [
+       -0.28,
+       0.085,
+       0.915,
+       0.83
+      ],
+      [
+       -0.15,
+       0.023,
+       0.977,
+       0.954
+      ],
+      [
+       0.0,
+       0.0,
+       1.0,
+       1.0
+      ],
+      [
+       0.15,
+       0.023,
+       0.977,
+       0.954
+      ],
+      [
+       0.28,
+       0.085,
+       0.915,
+       0.83
+      ],
+      [
+       0.38,
+       0.175,
+       0.825,
+       0.65
+      ],
+      [
+       0.45,
+       0.28,
+       0.72,
+       0.44
+      ],
+      [
+       0.49,
+       0.4,
+       0.6,
+       0.2
+      ]
+     ],
+     "picture": false,
+     "screen": false,
+     "edges": false
+    }
+   ],
+   "electric": false,
+   "climate": false,
+   "pet": false,
+   "surface": false,
+   "wall_y": 1.0,
+   "hole": false,
+   "vehicle": false
+  }
+ ],
+ "description": ""
+}
