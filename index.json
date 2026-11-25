@@ -45,6 +45,17 @@
       "sha256": "19765826e3730081cab0b944cdeeeb0df0f6d542f29fd7c28145585dbf328176"
     },
     {
+      "id": "hugo.shapes",
+      "name": "Shapes",
+      "description": "",
+      "author": "Hugo",
+      "submitter": "HugoMoeller",
+      "release": 5,
+      "items": 7,
+      "url": "https://raw.githubusercontent.com/therealMRBK/NextFloor-Plugins/main/packs/hugo.shapes.json",
+      "sha256": "680762d44b12408cace4dd39b33921e03045123d7212258466e69184dcf1aa9b"
+    },
+    {
       "id": "kallax_5x5",
       "name": "Kallax 5x5",
       "description": "IKEA Kallax 5x5",
